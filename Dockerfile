@@ -5,7 +5,7 @@ ENV VAULT_KEY=''
 ENV ANSIBLE_VAULT_PASSWORD_FILE='/.vault_key'
 
 RUN apk add \
-	ansible gcc python3-dev libc-dev libffi-dev openssl-dev bash
+	ansible gcc python3-dev libc-dev libffi-dev openssl-dev bash py3-pip
 
 RUN pip3 install --upgrade paramiko
 
